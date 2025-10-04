@@ -1,0 +1,23 @@
+{
+  "name": "asignaturalite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "cd truffle ; npx truffle migrate --compile-all --reset ; npx truffle exec ./scripts/rellenar.js",
+    "start": "cd dapp ;  npm run dev",
+    "cjson": "node mkcjson/MakeAsignaturaJson.mjs",
+    "deploy_win": "cd .\\truffle && npx truffle migrate --compile-all --reset && npx truffle exec .\\scripts\\rellenar.js",
+    "start_win": "cd dapp &&  npm run dev",
+    "cjson_win": "node .\\mkcjson\\MakeAsignaturaJson.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "history": "^5.3.0",
+    "react-router-dom": "^6.26.2",
+    "truffle": "^5.11.5"
+  }
+}
